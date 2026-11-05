@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="This website is temporarily under construction."
+    />
+    <title>Under construction</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #303b33;
+        background: #f8f7f2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        display: grid;
+        min-height: 100vh;
+        /* Dynamic viewport height keeps the composition centered on mobile. */
+        min-height: 100svh;
+        place-items: center;
+        padding: 3rem 1.5rem;
+        background:
+          radial-gradient(ellipse at 24% 28%, #e2eadf 0, transparent 46%),
+          radial-gradient(ellipse at 82% 76%, #efe6d8 0, transparent 44%);
+      }
+
+      .notice {
+        width: 100%;
+        max-width: 64rem;
+        text-align: center;
+      }
+
+      .mark {
+        display: grid;
+        width: 3rem;
+        height: 3rem;
+        margin: 0 auto 2rem;
+        place-items: center;
+        border: 1px solid #63795d30;
+        border-radius: 50%;
+      }
+
+      .mark::before {
+        content: "";
+        width: 0.65rem;
+        height: 0.65rem;
+        border-radius: 50%;
+        background: #7c916e;
+        box-shadow: 0 0 0 5px #7c916e12;
+      }
+
+      h1 {
+        margin: 0;
+        font-weight: 400;
+      }
+
+      .intro {
+        display: block;
+        margin-bottom: 1rem;
+        color: #70766b;
+        font-size: clamp(0.85rem, 2vw, 1rem);
+        letter-spacing: 0.06em;
+        line-height: 1.6;
+      }
+
+      .headline {
+        display: block;
+        font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+        font-size: clamp(2.8rem, 7vw, 6rem);
+        letter-spacing: -0.055em;
+        line-height: 1.1;
+        text-wrap: balance;
+      }
+
+      .notice::after {
+        content: "";
+        display: block;
+        width: 2.5rem;
+        height: 1px;
+        margin: 2.5rem auto 0;
+        background: #98a08e;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="notice">
+        <!-- The ornament is decorative; the heading carries the full message. -->
+        <div class="mark" aria-hidden="true"></div>
+        <h1>
+          <span class="intro">This website is temporarily</span>
+          <span class="headline">under construction.</span>
+        </h1>
+      </div>
+    </main>
+  </body>
+</html>
